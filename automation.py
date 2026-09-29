@@ -26,6 +26,7 @@ def log_message(message):
 try:
 
     print("Automation started...")
+    os.makedirs(BACKUP_FOLDER, exist_ok=True)
 
     files = os.listdir(SOURCE_FOLDER)
 
