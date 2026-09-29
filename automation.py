@@ -10,7 +10,8 @@ BACKUP_FOLDER = "backup"
 
 LOG_FILE = "automation.log"
 
-
+os.makedirs(BACKUP_FOLDER, exist_ok=True)
+    
 def log_message(message):
 
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
